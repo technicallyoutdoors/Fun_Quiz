@@ -3,17 +3,31 @@ from colors import my_color_list
 #function to start the quiz questions 
 
 def quiz():
-    q1 = input("What color do you like for clothes? ")
-    q2 = input("what color is the sky currently? ")
+    q1 = input("What is your favorite color? ")
+    q2 = input("What is the first letter if your name? ")
     q3 = input("What day is it? ")
 
+    american_alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+   
     #question_1_list = my_color_dict
 #TODO add all the variables do the other question
-    q1_value = my_color_list[1]
-    if q1 == q1_value:
+    if q1 == my_color_list[1]:
         print("this worked finally")
+    if q1 == my_color_list[0]:
+        print("you have selected blue as your favorite color")
+    if q1 == my_color_list[2]:
+        print("you have selected black as your favorite color")   
+    if q1 == my_color_list[3]:
+        print("you have selected red as your favorite color")
+    #if q2 == american_alphabet([]):
+    
+    if [0] in american_alphabet == q2:
+        print("the first letter of your name is in the range")          
     else:
         print("try again")
+    
+
+
 #question_1_list = my_color_list
 #make a fucntion for all the variables of the color names so that the if statement can 
 #be based on the color names instead of the values from the dictionary
