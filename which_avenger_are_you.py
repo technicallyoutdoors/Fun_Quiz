@@ -10,7 +10,8 @@ def quiz():
     american_alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
    
     #question_1_list = my_color_dict
-#TODO add all the variables do the other question
+#todo add all the variables do the other question
+#question 1 if statements
     if q1 == my_color_list[1]:
         print("this worked finally")
     if q1 == my_color_list[0]:
@@ -19,9 +20,8 @@ def quiz():
         print("you have selected black as your favorite color")   
     if q1 == my_color_list[3]:
         print("you have selected red as your favorite color")
-    #if q2 == american_alphabet([]):
-    
-    if [0] in american_alphabet == q2:
+#question 2 if statements 
+    if q2 == american_alphabet[0]:
         print("the first letter of your name is in the range")          
     else:
         print("try again")
