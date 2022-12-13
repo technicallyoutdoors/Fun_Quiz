@@ -1,5 +1,6 @@
 import json
 from colors import my_color_list
+import time
 #function to start the quiz questions 
 
 def quiz():
@@ -7,7 +8,7 @@ def quiz():
     q2 = input("What is the first letter if your name? ")
     q3 = input("What day is it? ")
 
-    american_alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    american_alphabet = ['a','b','c','d','e','f','g','h',"i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
    
     #question_1_list = my_color_dict
 #todo add all the variables do the other question
@@ -22,7 +23,13 @@ def quiz():
         print("you have selected red as your favorite color")
 #question 2 if statements 
     if q2 == american_alphabet[0]:
-        print("the first letter of your name is in the range")          
+        print("the first letter of your name is in the range")    
+    if q2 == american_alphabet[1]:
+        print(" is in the range")
+    if q2 == american_alphabet[2]:
+        print("the first letter of your name")
+    if q2 == american_alphabet[3:6]:
+        print("umm")        
     else:
         print("try again")
     
@@ -35,8 +42,8 @@ def quiz():
 
 
 print("Which Avenger do YOU think you are?")
-#TODO add a sleep time in between this question 
-print("Would you like to continue?")
+time.sleep(3)
+print("Would you like to find out?")
 
 answer = input("Y/N:")
 if answer == "Y".casefold():
