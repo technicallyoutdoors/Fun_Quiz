@@ -38,7 +38,7 @@ def quiz():
         print("try again")
     
     print(avenger_list1)
-
+#question 3 if statments 
 
 
 #question_1_list = my_color_list
@@ -48,7 +48,7 @@ def quiz():
 
 
 print("Which Avenger do YOU think you are?")
-time.sleep(3)
+time.sleep(2)
 print("Would you like to find out?")
 
 answer = input("Y/N:")
