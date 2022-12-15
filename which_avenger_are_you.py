@@ -9,7 +9,7 @@ def quiz():
     q3 = input("What day is it? ")
 
     american_alphabet = ['a','b','c','d','e','f','g','h',"i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-   
+    avenger_list1 = []
     #question_1_list = my_color_dict
 #todo add all the variables do the other question
 #question 1 if statements
@@ -17,22 +17,28 @@ def quiz():
         print("this worked finally")
     if q1 == my_color_list[0]:
         print("you have selected blue as your favorite color")
+        print("\n")
     if q1 == my_color_list[2]:
-        print("you have selected black as your favorite color")   
+        print("you have selected black as your favorite color")
+        print("\n")   
     if q1 == my_color_list[3]:
         print("you have selected red as your favorite color")
+        print("\n")
 #question 2 if statements 
     if q2 == american_alphabet[0]:
-        print("the first letter of your name is in the range")    
+        first_letter = 0   
     if q2 == american_alphabet[1]:
-        print(" is in the range")
+        second_letter = 1 
     if q2 == american_alphabet[2]:
-        print("the first letter of your name")
-    if q2 == american_alphabet[3:6]:
-        print("umm")        
+        third_letter = 2
+    if q2 in american_alphabet[3:6]:
+        first_range = 1
+        avenger_list1.append(first_range)      
     else:
         print("try again")
     
+    print(avenger_list1)
+
 
 
 #question_1_list = my_color_list
