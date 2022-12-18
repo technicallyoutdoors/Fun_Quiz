@@ -19,51 +19,64 @@ def quiz():
     list3 = [] #this is the list for the vegtable questions
 #todo add more colors to be including 
 #question 1 if statements using list 2
-    if q1 in my_color_list[0]:
-        first_color = 1
-        list2.append(first_color)
-    if q1 in my_color_list[1]:
-        second_color = 2 
-        list2.append(second_color)
-    if q1 in my_color_list[2]:
-        third_color = 3 
-        list2.append(third_color)
-    if q1 in my_color_list[3]:
-        fourth_color = 4 
-        list2.append(fourth_color)
-    
+    while True in list2:
+        try: 
+            if q1 in my_color_list[0]:
+                first_color = 1
+                list2.append(first_color)
+            if q1 in my_color_list[1]:
+                second_color = 2 
+                list2.append(second_color)
+            if q1 in my_color_list[2]:
+                third_color = 3 
+                list2.append(third_color)
+            if q1 in my_color_list[3]:
+                fourth_color = 4 
+                list2.append(fourth_color)
 #question 2 if statements using list 1
-    if q2 in american_alphabet[0:6]:
-        first_range = 1
-        list1.append(first_range)  
-    if q2 in american_alphabet[7:13]:
-        second_range = 2
-        list1.append(second_range)
-    if q2 in american_alphabet[14:20]:
-        third_range = 3
-        list1.append(third_range)      
-    if q2 in american_alphabet[21:26]:
-        fourth_range = 4
-        list1.append(fourth_range)             
-    
-#question 3 if statements using list 3 
-    if q3 in vegtable_list[0]:
-        first_vegtable = 1 
-        list3.append(first_vegtable)
-    if q3 in vegtable_list[1]:
-        second_vegtable = 2 
-        list3.append(second_vegtable)
-    if q3 in vegtable_list[2]:
-        third_vegtable = 3
-        list3.append(third_vegtable)
-    
+            if q2 in american_alphabet[0:6]:
+                first_range = 1
+                list1.append(first_range)  
+            if q2 in american_alphabet[7:13]:
+                second_range = 2
+                list1.append(second_range)
+            if q2 in american_alphabet[14:20]:
+                third_range = 3
+                list1.append(third_range)      
+            if q2 in american_alphabet[21:26]:
+                fourth_range = 4
+                list1.append(fourth_range)             
+            
+        #question 3 if statements using list 3 
+            if q3 in vegtable_list[0]:
+                first_vegtable = 1 
+                list3.append(first_vegtable)
+            if q3 in vegtable_list[1]:
+                second_vegtable = 2 
+                list3.append(second_vegtable)
+            if q3 in vegtable_list[2]:
+                third_vegtable = 3
+                list3.append(third_vegtable)
+            if q3 in vegtable_list[3]:
+                fourth_vegtable = 4
+                list3.append(fourth_vegtable)
+        except ValueError:
+            print("Sorry, we did not recognize that input")
+            continue
 
-
-    if list2[0] == 1 and list3[0] == 1 and list1[0] == 1:
-        print("The choice is obivious, you are...")
-        time.sleep(1)
-        print(avenger_list[0])
-    #todo add the rest of the if statements and determine what avenger should go with what values 
+            if list2[0] == 1 and list3[0] == 1 and list1[0] == 1:
+                print("The choice is obivious, you are...")
+                time.sleep(1)
+                print(avenger_list[0])
+            if list2[1] == 2 and list3[1] == 2 and list1[1] == 2:
+                print("The choice is obivious, you are...")
+                time.sleep(1)
+                print(avenger_list[1])    
+            #todo add the rest of the if statements and determine what avenger should go with what values 
+            if list2[2] == 3 and list3[2] == 3 and list1[2] == 3:
+                print("The choice is obivious, you are...")
+                time.sleep(1)
+                print(avenger_list[2]) #this will output thor as the avenger that person is 
 
 #question_1_list = my_color_list
 #make a fucntion for all the variables of the color names so that the if statement can 
@@ -78,7 +91,7 @@ print("Would you like to find out?")
 answer = input("Y/N: ")
 if answer == "Y" or 'y':
     quiz()
-elif answer == "N" or "n":
+if answer == 'N' or 'n':
     print("Come back later!", stop_quiz())
 
 
