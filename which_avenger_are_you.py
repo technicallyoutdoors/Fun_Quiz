@@ -78,7 +78,7 @@ print("Would you like to find out?")
 answer = input("Y/N: ")
 if answer == "Y" or 'y':
     quiz()
-if answer == "N" or "n":
+elif answer == "N" or "n":
     print("Come back later!", stop_quiz())
 
 
