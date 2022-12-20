@@ -99,6 +99,5 @@ if answer == "Y" or 'y':
     quiz()
 else:
     stop_quiz()
-
 time.sleep(1)
 print("Thanks for playing \nCome back soon!")
