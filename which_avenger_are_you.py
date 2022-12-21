@@ -68,15 +68,16 @@ def quiz():
     if q3 in vegtable_list[3]:
         fourth_vegtable = 4
         list3.append(fourth_vegtable)
-       
-    if list2[0] == 1 or 2 and list1[0] == 1 or 2 and list3[0] == 1 or 2:
+               
+    if 1 in list2 and 1 in list1 and 1 in list3:
         print("The choice is obivious, you are...")
         time.sleep(1)
         print(avenger_list[0])
-    #elif list2[1] == 2 and list1[1] == 2 and list3[1] == 2:
-        #print("The choice is obivious, you are...")
-        #time.sleep(1)
-        #print(avenger_list[1])    
+    if 2 in list2 and 2 in list1 and 2 in list3:
+        print("The choice is obivious, you are...")
+        time.sleep(1)
+        print(avenger_list[1])    
+    
 #todo add the rest of the if statements and determine what avenger should go with what values 
     #elif list2[2] == 3 and list1[2] == 3 and list3[2] == 3:
         #print("The choice is obivious, you are...")
@@ -101,3 +102,4 @@ else:
     stop_quiz()
 time.sleep(1)
 print("Thanks for playing \nCome back soon!")
+
