@@ -68,21 +68,21 @@ def quiz():
     if q3 in vegtable_list[3]:
         fourth_vegtable = 4
         list3.append(fourth_vegtable)
-               
+
     if 1 in list2 and 1 in list1 and 1 in list3:
         print("The choice is obivious, you are...")
         time.sleep(1)
-        print(avenger_list[0])
+        print(avenger_list[0]) #this prints captain america as avenger
     if 2 in list2 and 2 in list1 and 2 in list3:
         print("The choice is obivious, you are...")
         time.sleep(1)
-        print(avenger_list[1])    
+        print(avenger_list[1]) #this prints iron man as avenger
     
 #todo add the rest of the if statements and determine what avenger should go with what values 
     #elif list2[2] == 3 and list1[2] == 3 and list3[2] == 3:
         #print("The choice is obivious, you are...")
         #time.sleep(1)
-        #print(avenger_list[2]) #this will output thor as the avenger for that person
+        #print(avenger_list[2]) #this prints thor as avenger
             
 
 #question_1_list = my_color_list
